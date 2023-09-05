@@ -1,0 +1,2 @@
+#!/bin/bash
+while IFS= read -r line || [[ -n "$line" ]]; do first_letter="${line:0:1}"; decoded_message="${decoded_message}${first_letter}"; done; echo -e "$decoded_message"
